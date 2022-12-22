@@ -7,7 +7,7 @@ export default defineConfig({
     plugins: [
       externalizeDepsPlugin(),
       swcPlugin()
-    ]
+    ],
   },
   preload: {
     plugins: [externalizeDepsPlugin()]
@@ -18,6 +18,10 @@ export default defineConfig({
         '@renderer': resolve('src/renderer/src')
       }
     },
-    plugins: [react()]
-  }
+    plugins: [react()],
+    define: {
+      __IS_DEV__: JSON.stringify(true),
+      __API__: JSON.stringify('http://localhost:5173')
+    }
+  },
 })
