@@ -5,33 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4187502-7018-44c5-98ed-172b600af810" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/renderer/src/app/providers/ErrorBoundary/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/src/app/providers/ErrorBoundary/ui/ErrorBoundary.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/src/app/providers/StoreProvider/config/StateSchema.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/src/app/providers/StoreProvider/config/reducerManager.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/src/app/providers/StoreProvider/config/store.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/src/app/providers/StoreProvider/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/src/app/providers/StoreProvider/ui/StoreProvider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/src/app/types/global.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/src/shared/api/axios.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/src/shared/lib/classNames/classNames.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/src/shared/ui/Button/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/src/shared/ui/Button/ui/Button.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/src/shared/ui/Button/ui/Button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/src/widgets/PageError/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/src/widgets/PageError/ui/PageError.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/src/widgets/PageError/ui/PageError.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.cjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/electron.vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/electron.vite.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employees_schedule.sql" beforeDir="false" afterPath="$PROJECT_DIR$/employees_schedule.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierignore" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc.yaml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/src/app/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/src/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/src/app/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/src/components/Versions.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/src/shared/assets/icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/src/shared/assets/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/typeorm.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/typeorm.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,15 +38,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Programming/projects/electron-vite",
+    "last_opened_file_path": "C:/Programming/projects/bigraf",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Programming\\projects\\electron-vite\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "MTConfigurable",
-    "ts.external.directory.path": "C:\\Programming\\projects\\electron-vite\\node_modules\\typescript\\lib",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Programming\\projects\\bigraf\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "C:\\Programming\\projects\\bigraf\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -85,6 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671608756470</updated>
       <workItem from="1671608757883" duration="20504000" />
+      <workItem from="1674480585493" duration="9347000" />
     </task>
     <servers />
   </component>

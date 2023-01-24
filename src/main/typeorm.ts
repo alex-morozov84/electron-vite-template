@@ -16,7 +16,7 @@ const dataSource = new DataSource({
   type: 'sqlite',
   database: 'employees_schedule.sql',
   synchronize: true,
-  entities: [Post]
+  entities: [Post],
 })
 
 export const runTest = async (): Promise<void> => {

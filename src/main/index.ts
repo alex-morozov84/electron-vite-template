@@ -12,13 +12,13 @@ function createWindow(): void {
     autoHideMenuBar: true,
     ...(process.platform === 'linux'
       ? {
-          icon: path.join(__dirname, '../../build/icon.png')
+          icon: path.join(__dirname, '../../build/icon.png'),
         }
       : {}),
     webPreferences: {
       preload: path.join(__dirname, '../preload/index.js'),
-      sandbox: false
-    }
+      sandbox: false,
+    },
   })
 
   mainWindow.on('ready-to-show', () => {
@@ -74,4 +74,3 @@ app.on('window-all-closed', () => {
     app.quit()
   }
 })
-
