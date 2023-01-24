@@ -1,9 +1,9 @@
 {
-  "name": "employees-schedule",
+  "name": "electron-app",
   "version": "1.0.0",
-  "description": "Employee work and holiday schedule",
+  "description": "Electron app with vite builder",
   "main": "./out/main/index.js",
-  "author": "Alexander Morozov (mail@alex-morozov.ru)",
+  "author": "Alexander Morozov (mail@alex-morozov.com)",
   "scripts": {
     "prettier": "prettier --write **/*.{js,ts,tsx,json}",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
@@ -22,7 +22,7 @@
   },
   "lint-staged": {
     "**/*.{ts,tsx}": [
-      "elint",
+      "eslint",
       "prettier"
     ]
   },

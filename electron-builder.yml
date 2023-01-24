@@ -1,5 +1,5 @@
 appId: com.electron.app
-productName: Employees Schedule
+productName: ${name}
 directories:
   buildResources: build
 files:

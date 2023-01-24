@@ -1,14 +1,14 @@
 import { app, shell, BrowserWindow } from 'electron'
 import * as path from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
-import { runTest as runTypeormTest } from './typeorm'
+import { connectToDb } from './config/db'
+import { setControllers } from './model/controllers'
 
 function createWindow(): void {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 1920,
-    height: 1080,
     show: false,
+    icon: path.join(__dirname, '../../build/icon.ico'),
     autoHideMenuBar: true,
     ...(process.platform === 'linux'
       ? {
@@ -22,6 +22,7 @@ function createWindow(): void {
   })
 
   mainWindow.on('ready-to-show', () => {
+    mainWindow.maximize()
     mainWindow.show()
   })
 
@@ -35,14 +36,13 @@ function createWindow(): void {
   if (is.dev && process.env['ELECTRON_RENDERER_URL']) {
     mainWindow.loadURL(process.env['ELECTRON_RENDERER_URL'])
   } else {
-    mainWindow.loadFile(path.join(__dirname, '../renderer/index.html'))
+    mainWindow.loadFile(
+      path.join(__dirname, '../renderer/index.html')
+    )
   }
 }
 
-// This method will be called when Electron has finished
-// initialization and is ready to create browser windows.
-// Some APIs can only be used after this event occurs.
-app.whenReady().then(() => {
+const start = async () => {
   // Set app user model id for windows
   electronApp.setAppUserModelId('com.electron')
 
@@ -55,16 +55,20 @@ app.whenReady().then(() => {
 
   createWindow()
 
-  setTimeout(() => {
-    runTypeormTest()
-  }, 2000)
+  setControllers()
+  await connectToDb()
 
   app.on('activate', function () {
     // On macOS it's common to re-create a window in the app when the
     // dock icon is clicked and there are no other windows open.
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
   })
-})
+}
+
+// This method will be called when Electron has finished
+// initialization and is ready to create browser windows.
+// Some APIs can only be used after this event occurs.
+app.on('ready', start)
 
 // Quit when all windows are closed, except on macOS. There, it's common
 // for applications and their menu bar to stay active until the user quits
