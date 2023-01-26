@@ -23,8 +23,8 @@
   },
   "lint-staged": {
     "**/*.{ts,tsx}": [
-      "eslint",
-      "prettier"
+      "npm run lint:fix",
+      "npm run prettier"
     ]
   },
   "dependencies": {
