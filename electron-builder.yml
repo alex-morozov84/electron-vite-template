@@ -1,5 +1,5 @@
 appId: com.electron.app
-productName: ${name}
+productName: ElectronApp
 directories:
   buildResources: build
 files:
